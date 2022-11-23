@@ -1,0 +1,26 @@
+url: https://snowypeaksystems.com
+baseurl: ""
+
+# Site settings
+title: Snowy Peak Systems
+email: levi.muniz17@gmail.com
+description: "Snowy Peak Systems offers website design, support, and hosting services in Pueblo, Colorado."
+
+
+# Team names, titles and social links
+people:
+- name: Levi Muniz
+  pic: 1
+  position: Business Owner and Developer
+  social:
+    - title: github
+      url: https://github.com/leviem1
+
+social:
+  - title: envelope
+    url: "mailto:levi.muniz17@gmail.com"
+
+# Build settings
+permalink: pretty
+plugins:
+  - jekyll-sitemap
