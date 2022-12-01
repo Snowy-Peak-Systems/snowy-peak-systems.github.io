@@ -24,3 +24,10 @@ social:
 permalink: pretty
 plugins:
   - jekyll-sitemap
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - scripts
