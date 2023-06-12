@@ -2,7 +2,7 @@ function submitContact(token) {
     var name = $("input#name").val();
     var email = $("input#email").val();
     var message = $("textarea#message").val();
-    $.post({
+    $.ajax({
         url: "https://42cqecpfri.execute-api.us-east-2.amazonaws.com/contact",
         type: "POST",
         data: {
