@@ -16,10 +16,6 @@ people:
     - title: github
       url: https://github.com/leviem1
 
-social:
-  - title: envelope
-    url: "mailto:levi.muniz17@gmail.com"
-
 # Build settings
 permalink: pretty
 plugins:
