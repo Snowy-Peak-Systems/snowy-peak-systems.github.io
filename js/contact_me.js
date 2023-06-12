@@ -33,7 +33,7 @@ function submitContact(token) {
             if (data.status === 500){
                 $('#success > .alert-danger').append("<strong>Sorry, an unexpected error has occurred. Please try again later!");
             } else {
-                $('#success > .alert-danger').append("<strong>Sorry, an error has occurred: " + data.message);
+                $('#success > .alert-danger').append("<strong>Sorry, an error has occurred: " + data.responseJSON.message);
             }
 
             $('#success > .alert-danger').append('</div>');
