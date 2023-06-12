@@ -5,12 +5,13 @@ function submitContact(token) {
     $.ajax({
         url: "https://42cqecpfri.execute-api.us-east-2.amazonaws.com/contact",
         type: "POST",
-        data: {
+        contentType: "application/json",
+        data: JSON.stringify({
             name: name,
             email: email,
             message: message,
             token: token
-        },
+        }),
         dataType: 'json',
         cache: false,
         success: function () {
