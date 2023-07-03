@@ -33,6 +33,8 @@ function submitContact(token) {
                 .append("</button>");
             if (data.status === 500){
                 $('#success > .alert-danger').append("<strong>Sorry, an unexpected error has occurred. Please try again later!");
+            } else if (data.status === 429) {
+                $('#success > .alert-danger').append("<strong>Sorry, your request timed out, please try again!");
             } else {
                 $('#success > .alert-danger').append("<strong>Sorry, an error has occurred: " + data.responseJSON.message);
             }
