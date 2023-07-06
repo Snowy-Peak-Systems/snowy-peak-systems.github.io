@@ -3,7 +3,7 @@ function submitContact(token) {
     var email = $("input#email").val();
     var message = $("textarea#message").val();
     $.ajax({
-        url: "https://42cqecpfri.execute-api.us-east-2.amazonaws.com/contact",
+        url: "https://contact.api.snowypeaksystems.com/contact",
         type: "POST",
         contentType: "application/json",
         data: JSON.stringify({
